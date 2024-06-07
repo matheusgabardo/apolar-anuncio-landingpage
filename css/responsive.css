@@ -1,0 +1,242 @@
+/* Custom container queries */
+@media (min-width: 576px){ .consorcio-container { max-width: 556px; } }
+@media (min-width: 768px){ .consorcio-container { max-width: 728px; } }
+@media (min-width: 992px){ .consorcio-container { max-width: 932px; } }
+@media (min-width: 1400px){ .consorcio-container { max-width: 1150px; } }
+
+
+/* Main queries */
+@media screen and (min-width: 1600px){
+    .home-consorcio {
+        display: flex;
+        justify-content: center;
+    }
+    .home-consorcio-wrapper {
+        width: 100%;
+        max-width: 1600px;
+    }
+    .home-consorcio .home-know-main-section {
+        background-repeat: repeat;
+        background-size: unset;
+    }
+}
+@media screen and (max-width: 1680px){}
+@media screen and (min-width: 1440px) and (max-width: 1679px){}
+@media screen and (min-width: 1281px) and (max-width: 1439px){
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 11px !important; text-align: center; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 14px !important; }
+    .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px; }
+    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 38px; }
+    .home-consorcio .home-consorcio-main-section .banner-box img { width: 225px; }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    .home-consorcio .home-consorcio-main-section .title-box { justify-content: center;}
+    .home-consorcio .home-consorcio-main-section .title-box h1 {
+        font-size: 32px;
+    }
+    .home-consorcio .home-consorcio-main-section .title-box h2 {
+        font-size: 24px;
+        line-break: auto;
+    }
+    .home-consorcio .home-consorcio-main-section .simulacao-card-title h2 {
+        font-size: 24px;
+    }
+    .home-consorcio .home-consorcio-main-section .banner-box {
+        justify-content: end;
+    }
+
+}
+@media screen and (max-width: 1024px){
+    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
+    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
+    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
+    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5;}
+}
+@media screen and (min-width: 961px) and (max-width: 1024px){
+    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
+    .home-consorcio .home-consorcio-main-section .title-box { width: 50%; justify-content: center;}
+    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 36px; }
+    .home-consorcio .home-consorcio-main-section .title-box h2 { font-size: 28px; line-break: auto; }
+    .home-consorcio .home-consorcio-main-section .simulacao-card-title h2 { font-size: 28px; }
+    .home-consorcio .home-consorcio-main-section .banner-box {
+        justify-content: end;
+        width: 50%;
+    }
+    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; }
+    .home-consorcio .home-know-main-section .home-know-main-section-bloc-1 { width: 35%; }
+    .home-consorcio .home-know-main-section .home-know-chat-bloc { width: 65%; gap: 1rem; }
+    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; } 
+    .home-consorcio .consorcio-solutions-tab-bloc { width: 40%; }
+    .home-consorcio .consorcio-solutions-content-bloc { width: 60%; padding-top: 1.5rem; }
+    .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 11px !important; text-align: center; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 14px !important; }
+    .home-consorcio .home-faq-accordion-bloc { width: 60%; }
+    .home-consorcio .home-faq-contact-bloc { width: 40%; }
+}
+@media screen and (min-width: 768px) and (max-width: 960px){
+    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
+    .home-consorcio .home-consorcio-main-section .title-box { width: 50%; justify-content: center;}
+    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 36px; }
+    .home-consorcio .home-consorcio-main-section .title-box h2 { font-size: 28px; line-break: auto; }
+    .home-consorcio .home-consorcio-main-section .simulacao-card-title h2 {font-size: 28px; }
+    .home-consorcio .home-consorcio-main-section .banner-box {
+        justify-content: end;
+        width: 50%;
+    }
+    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; opacity: .5; }
+    .home-consorcio .home-consorcio-main-section .banner-box img:hover { opacity: 1; transition: .3s ease-in-out;}
+    /*  */
+    .home-consorcio .home-know-main-section .home-know-image { width: 300px; }
+    .home-consorcio .home-know-main-section-bloc-1 { display: flex; justify-content: center; }
+    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-card-arrow {
+        position: absolute;
+        left: unset;
+        top: -30px;
+        right: 200px;
+    }
+    .home-consorcio .home-benefits-card-row { flex-wrap: wrap;  gap: .5rem;}
+    .home-consorcio .home-benefits-main-section .home-benefits-card { width: 48%; }
+    .home-consorcio .consorcio-container { padding: 1rem;}
+    .home-consorcio .consorcio-solutions-content-bloc { padding: 1rem; margin-top: 2rem; }
+    .home-consorcio .home-testimonials-carrousel-slider-icon-box svg { width: 50px; margin-top: -15px;}
+    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
+    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
+    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
+    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5;}
+    .home-consorcio .home-faq-contact-bloc { margin-top: 2rem; }
+    .home-consorcio .home-faq-contact-card { margin: auto;}
+    .home-consorcio .home-announcement-banner-button { max-width: 300px; padding: 1rem 2rem; height: 40px; }
+    /* In this case, it is necessary to use !important because compound selectors sometimes override existing styles. */
+    .home-consorcio h1 { font-size: 34px !important; }
+    .home-consorcio h2 { font-size: 28px !important; }
+    .home-consorcio h3 { font-size: 24px !important; }
+    .home-consorcio h4 { font-size: 20px !important; }
+    .home-consorcio h5 { font-size: 18px !important; }
+    .home-consorcio h6 { font-size: 16px !important; }
+    .home-consorcio p { font-size: 14px !important; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 10px !important; text-align: center; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 12px !important; }
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
+    .home-consorcio .home-consorcio-main-section .title-box { width: 70%; }
+    .home-consorcio .home-consorcio-main-section .banner-box {
+        justify-content: end;
+        margin-top: -100px;
+        width: 30%;
+    }
+    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; opacity: .5; }
+    .home-consorcio .home-consorcio-main-section .banner-box img:hover { opacity: 1; transition: .3s ease-in-out;}
+    /*  */
+    .home-consorcio .home-know-main-section .home-know-image { width: 300px; }
+    .home-consorcio .home-know-main-section-bloc-1 { display: flex; justify-content: center; }
+    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-card-arrow {
+        position: absolute;
+        left: unset;
+        top: -30px;
+        right: 200px;
+    }
+    .home-consorcio .home-benefits-card-row { flex-wrap: wrap;  gap: .5rem;}
+    .home-consorcio .home-benefits-main-section .home-benefits-card { width: 48%; }
+    .home-consorcio .consorcio-container { padding: 1rem;}
+    .home-consorcio .consorcio-solutions-content-bloc { padding: 1rem; margin-top: 2rem; }
+    .home-consorcio .home-testimonials-carrousel-slider-icon-box svg { width: 50px; margin-top: -15px;}
+    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
+    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
+    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
+    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5;}
+    .home-consorcio .home-faq-contact-bloc { margin-top: 2rem; }
+    .home-consorcio .home-faq-contact-card { margin: auto;}
+    .home-consorcio .home-announcement-banner-button { max-width: 300px; padding: 1rem 2rem; height: 40px; }
+    /* In this case, it is necessary to use !important because compound selectors sometimes override existing styles. */
+    .home-consorcio h1 { font-size: 32px !important; }
+    .home-consorcio h2 { font-size: 28px !important; }
+    .home-consorcio h3 { font-size: 24px !important; }
+    .home-consorcio h4 { font-size: 18px !important; }
+    .home-consorcio h5 { font-size: 16px !important; }
+    .home-consorcio h6 { font-size: 14px !important; }
+    .home-consorcio p { font-size: 12px !important; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 10px !important; text-align: center; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 12px !important; }
+    .home-consorcio .home-accordion-button { font-size: 16px;}
+}
+@media screen and (max-width: 480px){
+    .home-consorcio .home-consorcio-main-section { background-image: url('../img/home_consorcio/bg-main-section-mobile.png'); }
+    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
+    .home-consorcio .home-consorcio-main-section .main-section-bloc-1 { flex-wrap: wrap; }
+    .home-consorcio .home-consorcio-main-section .title-box { width: 100%; }
+    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 36px; }
+    .home-consorcio .home-consorcio-main-section .title-box h2 {
+        font-size: 30px;
+        width: 50%;
+        line-break: auto;
+    }
+    .home-consorcio .home-consorcio-main-section .banner-box {
+        width: 100%;
+        justify-content: end;
+        margin-top: -100px;
+    }
+    .home-consorcio .home-consorcio-main-section .banner-box img { width: 40%; opacity: .5; height: unset;}
+    .home-consorcio .home-consorcio-main-section .banner-box img:hover { opacity: 1; transition: .3s ease-in-out;}
+    .home-consorcio .home-know-main-section .home-know-chat-bloc { padding: 2rem; }
+    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-card-arrow {
+        position: absolute;
+        left: unset;
+        top: -30px;
+        right: 90px;
+    }
+    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-button { font-size: 16px; }
+    .home-consorcio .home-know-main-section .home-know-chat-card h2 { font-size: 28px; }
+    .home-consorcio .home-benefits-main-section .home-benefits-title { font-size: 32px; }
+    .home-consorcio .home-benefits-card-row { flex-wrap: wrap; }
+    .home-consorcio .home-benefits-main-section .home-benefits-card { width: 100%; }
+    .home-consorcio .home-solutions-main-section .home-solutions-title { font-size: 32px; }
+    .home-consorcio .row { margin: 0;}
+    .home-consorcio .consorcio-solutions-tab-wrapper { margin-bottom: 1rem; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row { flex-wrap: wrap; background-repeat: no-repeat; height: unset; background-size: cover; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc:nth-child(0), .consorcio-solutions-tabContent-card-row-bloc:nth-child(1) { width: auto;}
+    .home-consorcio .consorcio-solutions-tabContent-card-row-divider { height: 36px;}
+    .home-consorcio .consorcio-solutions-tabContent-card-row { gap: .5rem; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row-divider.divider-2 { display: none;}
+    .home-consorcio .consorcio-tab-content-bloc { margin-bottom: 1rem; }
+    .home-consorcio .consorcio-solutions-content-bloc { margin-top: 1rem; }
+    .home-consorcio .consorcio-solutions-tabContent-card-big { margin-top: 1rem; }
+    .home-consorcio .consorcio-solutions-tabContent-card-row { padding: 1rem 2rem; justify-content: space-between;}
+    .home-consorcio .consorcio-solutions-tabContent-card-row-icon { margin: auto; }
+    .home-consorcio .home-whyapolar-title { font-size: 32px; }
+    .home-consorcio .home-whyapolar-counter-wrapper { flex-wrap: wrap; gap: 3rem; }
+    .home-consorcio .home-whyapolar-counter-item-bloc { width: 100%; }
+    .home-consorcio .home-testimonials-carrousel-slider-icon-box { opacity: .3; position: absolute; }
+    .home-consorcio .home-testimonials-carrousel-slider-text-box p { font-size: 16px; }
+    .home-consorcio .home-testimonials-carrousel-slider-text-box small { font-size: 16px; }
+    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
+    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
+    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
+    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5    ;}
+    .home-consorcio .home-testimonials-main-section svg { width: 25px;}
+    .home-consorcio .home-faq-title-wrapper h2 { font-size: 32px; }
+    .home-consorcio .home-faq-title-wrapper h4 { font-size: 26px;}
+    .home-consorcio .home-accordion-button { font-size: 16px;}
+    .home-consorcio .home-accordion-body p { font-size: 14px;}
+    .home-consorcio .home-faq-contact-bloc { margin-top: 2rem; }
+    .home-consorcio .home-announcement-banner-wrapper { height: auto; flex-wrap: wrap; gap: unset; }
+    .home-consorcio .home-announcement-banner-text-wrapper h6 { font-size: 22px; }
+    .home-consorcio .home-announcement-banner-text-wrapper p { font-size: 16px; }
+    .home-consorcio .consorcio-solutions-modal .modal-contact-row { flex-wrap: wrap; }
+    .home-consorcio .consorcio-solutions-modal .modal-contact-card-bloc { width: 100%; }
+    .home-consorcio .consorcio-solutions-modal .modal-contact-form-bloc { width: 100%; }
+    .home-consorcio .home-know-main-section .home-know-chat-card h3 { font-size: 24px; }
+    .home-consorcio .home-whyapolar-counter-item-bloc h1 { font-size: 51px;}
+    .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px;}
+}
+@media screen and (min-width: 414px) and (max-width: 430px){}
+@media screen and (min-width: 411px) and (max-width: 413px){}
+@media screen and (min-width: 375px) and (max-width: 410px){}
+@media screen and (min-width: 321px) and (max-width: 374px){}
+@media screen and (max-width: 420px){
+    .home-consorcio .home-know-main-section .home-know-chat-card h2 {
+        font-size: 24px;
+    }
+} 
+@media screen and (max-width: 320px){} 
