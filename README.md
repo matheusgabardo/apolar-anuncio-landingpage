@@ -1,0 +1,1 @@
+Foram utilizados os scripts contidos no site www.apolar.com.br para evitar incompatibilidades. Durante a integração ao projeto principal, será necessário remover esses scripts. (estão comentados com TODO )
