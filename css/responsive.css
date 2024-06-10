@@ -211,7 +211,7 @@
     .home-consorcio .home-testimonials-carrousel-slider-text-box p { font-size: 16px; }
     .home-consorcio .home-testimonials-carrousel-slider-text-box small { font-size: 16px; }
     .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
-    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
+    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -3%; }
     .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
     .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5    ;}
     .home-consorcio .home-testimonials-main-section svg { width: 25px;}
@@ -229,6 +229,8 @@
     .home-consorcio .home-know-main-section .home-know-chat-card h3 { font-size: 24px; }
     .home-consorcio .home-whyapolar-counter-item-bloc h1 { font-size: 51px;}
     .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px;}
+    .home-consorcio .consorcio-solutions-tabContent-card-tooltip-content { display: none; }
+    .home-consorcio .home-announcement-banner-button { margin: auto;}
 }
 @media screen and (min-width: 414px) and (max-width: 430px){}
 @media screen and (min-width: 411px) and (max-width: 413px){}

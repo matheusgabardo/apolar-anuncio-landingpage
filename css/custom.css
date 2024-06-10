@@ -1,5 +1,5 @@
 /* global classes */
-.h-100 { height: 100%; }
+.home-consorcio .h-100 { height: 100%; }
 .home-consorcio {
     font-family: "Source Sans Pro";
 }
@@ -1140,11 +1140,11 @@
     justify-content: center;
 }
 /* Tooltip container */
-.consorcio-solutions-tabContent-card-tooltip-wrapper {
+.home-consorcio .consorcio-solutions-tabContent-card-tooltip-wrapper {
     position: relative;
     display: inline-block;
 }
-.consorcio-solutions-tabContent-card-tooltip-wrapper .consorcio-solutions-tabContent-card-tooltip-content {
+.home-consorcio .consorcio-solutions-tabContent-card-tooltip-wrapper .consorcio-solutions-tabContent-card-tooltip-content {
     visibility: hidden;
     width: 200px;
     border-radius: 8px;
@@ -1160,16 +1160,16 @@
     right: -205px;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.25);
 }
-.consorcio-solutions-tabContent-card-tooltip-wrapper:hover .consorcio-solutions-tabContent-card-tooltip-content {
+.home-consorcio .consorcio-solutions-tabContent-card-tooltip-wrapper:hover .consorcio-solutions-tabContent-card-tooltip-content {
     visibility: visible;
 }
-.consorcio-solutions-tabContent-card-tooltip-wrapper .consorcio-solutions-tabContent-card-tooltip-content h6 {
+.home-consorcio .consorcio-solutions-tabContent-card-tooltip-wrapper .consorcio-solutions-tabContent-card-tooltip-content h6 {
     color: #333;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
 }
-.consorcio-solutions-tabContent-card-tooltip-wrapper .consorcio-solutions-tabContent-card-tooltip-content h5 {
+.home-consorcio .consorcio-solutions-tabContent-card-tooltip-wrapper .consorcio-solutions-tabContent-card-tooltip-content h5 {
     color: #333;
     font-size: 24px;
     font-style: normal;
