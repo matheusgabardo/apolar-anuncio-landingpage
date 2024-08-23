@@ -1,7 +1,9 @@
 /* Custom container queries */
 @media (min-width: 576px){ .consorcio-container { max-width: 556px; } }
 @media (min-width: 768px){ .consorcio-container { max-width: 728px; } }
-@media (min-width: 992px){ .consorcio-container { max-width: 932px; } }
+@media (min-width: 992px){ .consorcio-container { max-width: 932px; }    
+    .navbar-expand-lg .navbar-nav .nav-link {padding-right: 1rem;padding-left: 1rem;} 
+}
 @media (min-width: 1400px){ .consorcio-container { max-width: 1150px; } }
 
 
