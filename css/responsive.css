@@ -1,246 +1,150 @@
-/* Custom container queries */
-@media (min-width: 576px){ .consorcio-container { max-width: 556px; } }
-@media (min-width: 768px){ .consorcio-container { max-width: 728px; } }
-@media (min-width: 992px){ .consorcio-container { max-width: 932px; }    
-    .navbar-expand-lg .navbar-nav .nav-link {padding-right: 1rem;padding-left: 1rem;} 
-}
-@media (min-width: 1400px){ .consorcio-container { max-width: 1150px; } }
-
-
-/* Main queries */
-@media screen and (min-width: 1600px){
-    .home-consorcio {
-        display: flex;
-        justify-content: center;
-    }
-    .home-consorcio-wrapper {
-        width: 100%;
-        max-width: 1600px;
-    }
-    .home-consorcio .home-know-main-section {
-        background-repeat: repeat;
-        background-size: unset;
-    }
-}
+@media screen and (min-width: 1600px){}
 @media screen and (max-width: 1680px){}
 @media screen and (min-width: 1440px) and (max-width: 1679px){}
-@media screen and (min-width: 1281px) and (max-width: 1439px){
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 11px !important; text-align: center; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 14px !important; }
-    .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px; }
-    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 38px; }
-    .home-consorcio .home-consorcio-main-section .banner-box img { width: 225px; }
-}
-@media screen and (min-width: 1025px) and (max-width: 1280px){
-    .home-consorcio .home-consorcio-main-section .title-box { justify-content: center;}
-    .home-consorcio .home-consorcio-main-section .title-box h1 {
-        font-size: 32px;
-    }
-    .home-consorcio .home-consorcio-main-section .title-box h2 {
-        font-size: 24px;
-        line-break: auto;
-    }
-    .home-consorcio .home-consorcio-main-section .simulacao-card-title h2 {
-        font-size: 24px;
-    }
-    .home-consorcio .home-consorcio-main-section .banner-box {
-        justify-content: end;
-    }
-
-}
-@media screen and (max-width: 1024px){
-    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
-    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
-    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
-    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5;}
-}
+@media screen and (min-width: 1281px) and (max-width: 1439px){}
+@media screen and (min-width: 1025px) and (max-width: 1280px){}
+@media screen and (max-width: 1024px){}
 @media screen and (min-width: 961px) and (max-width: 1024px){
-    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
-    .home-consorcio .home-consorcio-main-section .title-box { width: 50%; justify-content: center;}
-    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 36px; }
-    .home-consorcio .home-consorcio-main-section .title-box h2 { font-size: 28px; line-break: auto; }
-    .home-consorcio .home-consorcio-main-section .simulacao-card-title h2 { font-size: 28px; }
-    .home-consorcio .home-consorcio-main-section .banner-box {
-        justify-content: end;
-        width: 50%;
-    }
-    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; }
-    .home-consorcio .home-know-main-section .home-know-main-section-bloc-1 { width: 35%; }
-    .home-consorcio .home-know-main-section .home-know-chat-bloc { width: 65%; gap: 1rem; }
-    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; } 
-    .home-consorcio .consorcio-solutions-tab-bloc { width: 40%; }
-    .home-consorcio .consorcio-solutions-content-bloc { width: 60%; padding-top: 1.5rem; }
-    .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 11px !important; text-align: center; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 14px !important; }
-    .home-consorcio .home-faq-accordion-bloc { width: 60%; }
-    .home-consorcio .home-faq-contact-bloc { width: 40%; }
+    .navbar-nav {margin-top: 1rem;border-top: 1px solid #33333359;border-bottom: 1px solid #33333359;padding-bottom: .5rem;}
+    .navbar-expand-xl .navbar-nav .nav-link {padding: 8px 0px;border-bottom: 1px solid #33333317;margin: 0 20px;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(5) .nav-link {border-bottom: unset;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(6) .nav-link, .navbar-expand-xl .navbar-nav .nav-item:nth-child(7) .nav-link {margin: 10px 20px;width: 45%;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(7) {position: absolute;bottom: 17px;right: 0;width: 47%;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(7) .nav-link {float: right;width: 100%;}
+    .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(49,44,115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+    .navbar-toggler-icon {border-color: var(--jacarta);}
+    .header-default nav .nav-item:last-of-type {margin-left: 0;}    
+    .announce-main-section {background-size: inherit;min-height: 589px;padding-top: 40px;}
+    .advantages-section-image, .advantages-section-two .advantages-section-image {background-size: contain; border-radius: 30px;}
+    .advantages-section-image img {position: relative;bottom: 0;right: -40%;max-width: 250px;}
+    .advantages-section-two .advantages-section-image img {position: relative;bottom: 0;right: -40%;max-width: 250px;}
+    .advantages-card:first-of-type, .advantages-card:nth-child(2) {margin-top: 1rem;}
+    .advantages-card-bottom {margin-bottom: 1rem;}
+    .steps-section-card {margin-top: 1rem;}
+    .steps-section-card-item {margin-bottom: 3rem;}
+    .steps-section-card-item:last-of-type {margin-bottom: 2rem;}
+    .steps-section-card-item-line{height: 500px;}
+    .steps-section .mascot-image {margin-left: 28%;max-height: 500px;}
+    .steps-section .did-you-know-card-block {min-height: 210px;}
+    .know-more-card .card-body {min-height: 240px;}
+    .know-more-card .card-text {height: 90px;}
+    .calculator-section{height: unset;}
+    .calculator-card, .calculator-card .calculadora, .calculator-card iframe {height: revert-layer;}
+    .faq-section-contact{margin-top: 1rem;}
+    .faq-section-contact, .faq-section-contact .btn_default {max-width: unset; width: 100%;}
+    .sales-counter, .rent-counter{display: grid;grid-template-columns: 1fr 1fr;border-radius: 25px;}
+    .sales-counter-item, .rent-counter-item{justify-content: space-between;}
+    .sales-counter-item:first-of-type, .sales-counter-item:nth-child(3){border-right: 1px solid #33333359;}
+    .sales-counter-item:last-of-type, .sales-counter-item:nth-child(3){border-top: 1px solid #33333359;}
+    .rent-counter-item:first-of-type, .rent-counter-item:nth-child(3){border-right: 1px solid #33333359;}
+    .rent-counter-item:last-of-type, .rent-counter-item:nth-child(3){border-top: 1px solid #33333359;}
+    .sales-counter-item h1{width: 35%!important;}
+    .rent-counter-item h1{width: 65%!important;}
+    .know-more-bottom-image {width: 30%;height: 30%;margin: auto;}
 }
 @media screen and (min-width: 768px) and (max-width: 960px){
-    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
-    .home-consorcio .home-consorcio-main-section .title-box { width: 50%; justify-content: center;}
-    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 36px; }
-    .home-consorcio .home-consorcio-main-section .title-box h2 { font-size: 28px; line-break: auto; }
-    .home-consorcio .home-consorcio-main-section .simulacao-card-title h2 {font-size: 28px; }
-    .home-consorcio .home-consorcio-main-section .banner-box {
-        justify-content: end;
-        width: 50%;
-    }
-    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; opacity: .5; }
-    .home-consorcio .home-consorcio-main-section .banner-box img:hover { opacity: 1; transition: .3s ease-in-out;}
-    /*  */
-    .home-consorcio .home-know-main-section .home-know-image { width: 300px; }
-    .home-consorcio .home-know-main-section-bloc-1 { display: flex; justify-content: center; }
-    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-card-arrow {
-        position: absolute;
-        left: unset;
-        top: -30px;
-        right: 200px;
-    }
-    .home-consorcio .home-benefits-card-row { flex-wrap: wrap;  gap: .5rem;}
-    .home-consorcio .home-benefits-main-section .home-benefits-card { width: 48%; }
-    .home-consorcio .consorcio-container { padding: 1rem;}
-    .home-consorcio .consorcio-solutions-content-bloc { padding: 1rem; margin-top: 2rem; }
-    .home-consorcio .home-testimonials-carrousel-slider-icon-box svg { width: 50px; margin-top: -15px;}
-    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
-    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
-    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
-    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5;}
-    .home-consorcio .home-faq-contact-bloc { margin-top: 2rem; }
-    .home-consorcio .home-faq-contact-card { margin: auto;}
-    .home-consorcio .home-announcement-banner-button { max-width: 300px; padding: 1rem 2rem; height: 40px; }
-    /* In this case, it is necessary to use !important because compound selectors sometimes override existing styles. */
-    .home-consorcio h1 { font-size: 34px !important; }
-    .home-consorcio h2 { font-size: 28px !important; }
-    .home-consorcio h3 { font-size: 24px !important; }
-    .home-consorcio h4 { font-size: 20px !important; }
-    .home-consorcio h5 { font-size: 18px !important; }
-    .home-consorcio h6 { font-size: 16px !important; }
-    .home-consorcio p { font-size: 14px !important; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 10px !important; text-align: center; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 12px !important; }
+    .navbar-nav {margin-top: 1rem;border-top: 1px solid #33333359;border-bottom: 1px solid #33333359;padding-bottom: .5rem;}
+    .navbar-expand-xl .navbar-nav .nav-link {padding: 8px 0px;border-bottom: 1px solid #33333317;margin: 0 20px;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(5) .nav-link {border-bottom: unset;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(6) .nav-link, .navbar-expand-xl .navbar-nav .nav-item:nth-child(7) .nav-link {margin: 10px 20px;}
+    .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(49,44,115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+    .navbar-toggler-icon {border-color: var(--jacarta);}
+    .header-default nav .nav-item:last-of-type {margin-left: 0;}    
+    .announce-main-section {background-size: inherit;min-height: 589px;padding-top: 40px;}
+    .advantages-section-image, .advantages-section-two .advantages-section-image {background-size: contain; border-radius: 30px;}
+    .advantages-section-image img {position: relative;bottom: 0;right: -40%;max-width: 250px;}
+    .advantages-section-two .advantages-section-image img {position: relative;bottom: 0;right: -22%;max-width: 250px;}
+    .advantages-card:first-of-type, .advantages-card:nth-child(2) {margin-top: 1rem;}
+    .advantages-card-bottom {margin-bottom: 1rem;}
+    .steps-section-card {margin-top: 1rem;}
+    .steps-section-card-item {margin-bottom: 3rem;}
+    .steps-section-card-item:last-of-type {margin-bottom: 2rem;}
+    .steps-section-card-item-line{height: 500px;}
+    .steps-section .did-you-know-card-block {min-height: 210px;}
+    .know-more-card .card-body {min-height: 240px;}
+    .know-more-card .card-text {height: 90px;}
+    .calculator-section{height: unset;}
+    .calculator-card, .calculator-card .calculadora, .calculator-card iframe {height: revert-layer;}
+    .faq-section-contact{margin-top: 1rem;}
+    .faq-section-contact, .faq-section-contact .btn_default {max-width: unset; width: 100%;}
+    .sales-counter, .rent-counter{display: grid;grid-template-columns: 1fr 1fr;border-radius: 25px;}
+    .sales-counter-item, .rent-counter-item{justify-content: space-between;}
+    .sales-counter-item:first-of-type, .sales-counter-item:nth-child(3){border-right: 1px solid #33333359;}
+    .sales-counter-item:last-of-type, .sales-counter-item:nth-child(3){border-top: 1px solid #33333359;}
+    .rent-counter-item:first-of-type, .rent-counter-item:nth-child(3){border-right: 1px solid #33333359;}
+    .rent-counter-item:last-of-type, .rent-counter-item:nth-child(3){border-top: 1px solid #33333359;}
+    .sales-counter-item h1{width: 35%!important;}
+    .rent-counter-item h1{width: 65%!important;}
+    .know-more-bottom-image {width: 30%;height: 30%;margin: auto;}
 }
-@media screen and (min-width: 481px) and (max-width: 767px){
-    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
-    .home-consorcio .home-consorcio-main-section .title-box { width: 70%; }
-    .home-consorcio .home-consorcio-main-section .banner-box {
-        justify-content: end;
-        margin-top: -100px;
-        width: 30%;
-    }
-    .home-consorcio .home-consorcio-main-section .banner-box img { width: 70%; opacity: .5; }
-    .home-consorcio .home-consorcio-main-section .banner-box img:hover { opacity: 1; transition: .3s ease-in-out;}
-    /*  */
-    .home-consorcio .home-know-main-section .home-know-image { width: 300px; }
-    .home-consorcio .home-know-main-section-bloc-1 { display: flex; justify-content: center; }
-    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-card-arrow {
-        position: absolute;
-        left: unset;
-        top: -30px;
-        right: 200px;
-    }
-    .home-consorcio .home-benefits-card-row { flex-wrap: wrap;  gap: .5rem;}
-    .home-consorcio .home-benefits-main-section .home-benefits-card { width: 48%; }
-    .home-consorcio .consorcio-container { padding: 1rem;}
-    .home-consorcio .consorcio-solutions-content-bloc { padding: 1rem; margin-top: 2rem; }
-    .home-consorcio .home-testimonials-carrousel-slider-icon-box svg { width: 50px; margin-top: -15px;}
-    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
-    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -5%; }
-    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
-    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5;}
-    .home-consorcio .home-faq-contact-bloc { margin-top: 2rem; }
-    .home-consorcio .home-faq-contact-card { margin: auto;}
-    .home-consorcio .home-announcement-banner-button { max-width: 300px; padding: 1rem 2rem; height: 40px; }
-    /* In this case, it is necessary to use !important because compound selectors sometimes override existing styles. */
-    .home-consorcio h1 { font-size: 32px !important; }
-    .home-consorcio h2 { font-size: 28px !important; }
-    .home-consorcio h3 { font-size: 24px !important; }
-    .home-consorcio h4 { font-size: 18px !important; }
-    .home-consorcio h5 { font-size: 16px !important; }
-    .home-consorcio h6 { font-size: 14px !important; }
-    .home-consorcio p { font-size: 12px !important; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h6 { font-size: 10px !important; text-align: center; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc h5 { font-size: 12px !important; }
-    .home-consorcio .home-accordion-button { font-size: 16px;}
-}
-@media screen and (max-width: 480px){
-    .home-consorcio .home-consorcio-main-section { background-image: url('../img/home_consorcio/bg-main-section-mobile.png'); }
-    .home-consorcio .home-consorcio-main-section .row { margin-right: unset; margin-left: unset; gap: 1rem; }
-    .home-consorcio .home-consorcio-main-section .main-section-bloc-1 { flex-wrap: wrap; }
-    .home-consorcio .home-consorcio-main-section .title-box { width: 100%; }
-    .home-consorcio .home-consorcio-main-section .title-box h1 { font-size: 36px; }
-    .home-consorcio .home-consorcio-main-section .title-box h2 {
-        font-size: 30px;
-        width: 50%;
-        line-break: auto;
-    }
-    .home-consorcio .home-consorcio-main-section .banner-box {
-        width: 100%;
-        justify-content: end;
-        margin-top: -100px;
-    }
-    .home-consorcio .home-consorcio-main-section .banner-box img { width: 40%; opacity: .5; height: unset;}
-    .home-consorcio .home-consorcio-main-section .banner-box img:hover { opacity: 1; transition: .3s ease-in-out;}
-    .home-consorcio .home-know-main-section .home-know-chat-bloc { padding: 2rem; }
-    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-card-arrow {
-        position: absolute;
-        left: unset;
-        top: -30px;
-        right: 90px;
-    }
-    .home-consorcio .home-know-main-section .home-know-chat-bloc .home-know-chat-button { font-size: 16px; }
-    .home-consorcio .home-know-main-section .home-know-chat-card h2 { font-size: 28px; }
-    .home-consorcio .home-benefits-main-section .home-benefits-title { font-size: 32px; }
-    .home-consorcio .home-benefits-card-row { flex-wrap: wrap; }
-    .home-consorcio .home-benefits-main-section .home-benefits-card { width: 100%; }
-    .home-consorcio .home-solutions-main-section .home-solutions-title { font-size: 32px; }
-    .home-consorcio .row { margin: 0;}
-    .home-consorcio .consorcio-solutions-tab-wrapper { margin-bottom: 1rem; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row { flex-wrap: wrap; background-repeat: no-repeat; height: unset; background-size: cover; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-bloc:nth-child(0), .consorcio-solutions-tabContent-card-row-bloc:nth-child(1) { width: auto;}
-    .home-consorcio .consorcio-solutions-tabContent-card-row-divider { height: 36px;}
-    .home-consorcio .consorcio-solutions-tabContent-card-row { gap: .5rem; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row-divider.divider-2 { display: none;}
-    .home-consorcio .consorcio-tab-content-bloc { margin-bottom: 1rem; }
-    .home-consorcio .consorcio-solutions-content-bloc { margin-top: 1rem; }
-    .home-consorcio .consorcio-solutions-tabContent-card-big { margin-top: 1rem; }
-    .home-consorcio .consorcio-solutions-tabContent-card-row { padding: 1rem 2rem; justify-content: space-between;}
-    .home-consorcio .consorcio-solutions-tabContent-card-row-icon { margin: auto; }
-    .home-consorcio .home-whyapolar-title { font-size: 32px; }
-    .home-consorcio .home-whyapolar-counter-wrapper { flex-wrap: wrap; gap: 3rem; }
-    .home-consorcio .home-whyapolar-counter-item-bloc { width: 100%; }
-    .home-consorcio .home-testimonials-carrousel-slider-icon-box { opacity: .3; position: absolute; }
-    .home-consorcio .home-testimonials-carrousel-slider-text-box p { font-size: 16px; }
-    .home-consorcio .home-testimonials-carrousel-slider-text-box small { font-size: 16px; }
-    .home-consorcio .home-testimonials-main-section .carousel-control-prev { left: -5%; }
-    .home-consorcio .home-testimonials-main-section .carousel-control-next { right: -3%; }
-    .home-consorcio #homeTestimonialsCarrousel .carousel-indicators { bottom: -30px; }
-    .home-consorcio .home-testimonials-main-section:hover .carousel-control-next, .home-testimonials-main-section:hover .carousel-control-prev { opacity: .5    ;}
-    .home-consorcio .home-testimonials-main-section svg { width: 25px;}
-    .home-consorcio .home-faq-title-wrapper h2 { font-size: 32px; }
-    .home-consorcio .home-faq-title-wrapper h4 { font-size: 26px;}
-    .home-consorcio .home-accordion-button { font-size: 16px;}
-    .home-consorcio .home-accordion-body p { font-size: 14px;}
-    .home-consorcio .home-faq-contact-bloc { margin-top: 2rem; }
-    .home-consorcio .home-announcement-banner-wrapper { height: auto; flex-wrap: wrap; gap: unset; }
-    .home-consorcio .home-announcement-banner-text-wrapper h6 { font-size: 22px; }
-    .home-consorcio .home-announcement-banner-text-wrapper p { font-size: 16px; }
-    .home-consorcio .consorcio-solutions-modal .modal-contact-row { flex-wrap: wrap; }
-    .home-consorcio .consorcio-solutions-modal .modal-contact-card-bloc { width: 100%; }
-    .home-consorcio .consorcio-solutions-modal .modal-contact-form-bloc { width: 100%; }
-    .home-consorcio .home-know-main-section .home-know-chat-card h3 { font-size: 24px; }
-    .home-consorcio .home-whyapolar-counter-item-bloc h1 { font-size: 51px;}
-    .home-consorcio .consorcio-solutions-tab-wrapper a { height: 150px;}
-    .home-consorcio .consorcio-solutions-tabContent-card-tooltip-content { display: none; }
-    .home-consorcio .home-announcement-banner-button { margin: auto;}
-}
+@media screen and (min-width: 481px) and (max-width: 767px){}
+@media screen and (max-width: 480px){}
 @media screen and (min-width: 414px) and (max-width: 430px){}
 @media screen and (min-width: 411px) and (max-width: 413px){}
 @media screen and (min-width: 375px) and (max-width: 410px){}
 @media screen and (min-width: 321px) and (max-width: 374px){}
-@media screen and (max-width: 420px){
-    .home-consorcio .home-know-main-section .home-know-chat-card h2 {
-        font-size: 24px;
-    }
-} 
+@media screen and (max-width: 420px){} 
 @media screen and (max-width: 320px){} 
+
+@media (min-width: 576px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}
+@media (min-width: 1200px) {}
+
+
+
+@media (max-width: 575.98px) {}
+@media (max-width: 767.98px) {
+    .header-default nav {padding: 10px 15px;}
+    .navbar-nav {margin-top: 1rem;border-top: 1px solid #33333359;border-bottom: 1px solid #33333359;padding-bottom: .5rem;}
+    .navbar-expand-xl .navbar-nav .nav-link {padding: 8px 0px;border-bottom: 1px solid #33333317;margin: 0 20px;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(5) .nav-link {border-bottom: unset;}
+    .navbar-expand-xl .navbar-nav .nav-item:nth-child(6) .nav-link, .navbar-expand-xl .navbar-nav .nav-item:nth-child(7) .nav-link {margin: 10px 20px;}
+    .header-default nav .nav-item:last-of-type {margin-left: 0;}    
+    .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(49,44,115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
+    .navbar-toggler-icon {border-color: var(--jacarta);}
+    .announce-main-section {min-height: 460px;background-size: auto;padding: 30px 0 30px;}
+    .announce-main-description {padding: 15px;}
+    .announce-main-description h1, .steps-section-title h1, .calculator-section-content h1{font-size: 32px;margin-bottom: 2rem;}
+    .sales-section-title, .advantages-section-title, .rent-section-title, .faq-section-title, .faq-section-contact-title {font-size: 34px;}
+    .announce-main-description h2, .did-you-know-card-block-title h2, .sales-section-description, .rent-section-description {font-size: 24px;}
+    .announce-main-description h1 br{display: none;}
+    .steps-section, .calculator-section, .sales-section, .advantages-section, .rent-section, .faq-section, .know-more-section{padding: 30px 0 30px;}
+    .steps-section-card-item-image {margin: 1rem auto;}
+    .steps-section-card-item {margin-bottom: 1.5rem;}
+    .steps-section-card {margin-top: 0;}
+    .steps-section-card-item, .know-more-card-bottom, .sales-counter, .rent-counter {flex-direction: column;}
+    .steps-section .steps-section-bell {width: 40px;height: 40px;right: 10px;top: -10px;}
+    .steps-section-card-item-line {display: none;}
+    .steps-section .did-you-know-card-bell {width: 30px;height: 30px;}
+    .steps-section .mascot-image{max-width: 250px;}
+    .steps-section .did-you-know-card-block {padding: 20px;min-height: 230px;}
+    .steps-section .did-you-know-card-block-content p{font-size: 20px;}
+    .steps-section .did-you-know-card-arrow {top: 220px;}
+    .calculator-section{height: unset;}
+    .calculator-card, .calculator-card .calculadora, .calculator-card iframe {height: revert-layer;}
+    .sales-counter, .rent-counter{border-radius: 20px;}
+    .sales-counter-item, .rent-counter-item {flex-direction: column;padding-left: 0;width: 100%;}
+    .sales-counter-item:not(:last-of-type), .rent-counter-item:not(:last-of-type){border-bottom: 1px solid #33333317;padding-bottom: 1rem;padding-top: 1rem;}
+    .sales-counter-item h1, .rent-counter-item h1{width: 100%!important;}
+    .sales-counter-item p, .rent-counter-item p {width: 100%; text-align: center;margin: 0;}
+    .advantages-section-image, .advantages-section-two .advantages-section-image {background-size: cover; border-radius: 30px;}
+    .advantages-section-image img {position: relative;bottom: 0;right: -7%;max-width: 250px;}
+    .advantages-section-two .advantages-section-image img {position: relative;bottom: 0;right: -22%;max-width: 250px;}
+    .advantages-card:first-of-type {margin-top: 1rem;}
+    .advantages-card-block { min-height: 180px;}
+    .advantages-card-bottom {margin-bottom: 1rem;}
+    .advantages-card-description {font-size: 22px;}
+    .rent-section-description {margin-bottom: 1.5rem;}
+    .faq-accordion .card-header {padding: 8px 30px;border-radius: 20px !important;}
+    .know-more-bottom-image {max-width: 75%;margin: auto;}
+}
+@media (max-width: 991.98px) {}
+@media (max-width: 1199.98px) {}
+@media (max-width: 575.98px) {}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 1200px) {}

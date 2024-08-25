@@ -30,51 +30,34 @@ body{
     padding: 0;
     font-family: "Source Sans Pro";
 }
-.btn-rounded{
-    border-radius: 45px;
+.btn_default{
+    background-color: var(--supernova);
+    padding: 10px 20px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 3.75px;
+    max-width: 400px;
+    margin: 3rem auto 0;
+    text-decoration: none;
 }
-.bg-supernova{
-    background: var(--supernova)
+.btn_default:hover {
+    transition: .3s;
+    border-radius: 5px;
+    background-color: var(--jacarta);
+    color: #ffffff;
+    transform: scale(1.01);
+    text-decoration: none;
 }
-.bg-goldenrod{
-    background: var(--goldenrod)
-}
-.bg-egg_white{
-    background: var(--egg_white)
-}
-.bg-early_dawn{
-    background: var(--early_dawn)
-}
-.bg-jacarta{
-    background: var(--jacarta)
-}
-.bg-san_marino{
-    background: var(--san_marino)
-}
-.bg-scampi{
-    background: var(--scampi)
-}
-.bg-periwinkle_gray{
-    background: var(--periwinkle_gray)
-}
-.bg-crimson{
-    background: var(--crimson)
-}
-.bg-tamarillo{
-    background: var(--tamarillo)
-}
-.bg-dark_tan{
-    background: var(--dark_tan)
-}
-.mineshaft{
-    color: var(--mineshaft)!important;
-}
-.white{
-    color: #ffffff!important;
-}
-.dark{
-    color: #000000!important;
-}
+.btn_default:hover svg path{
+    transition: .3s;                                                       
+    display: inline-block;
+    animation: rotation .3s linear;}
 /*Header*/
 .header-default nav{
     width: 100%;
@@ -85,9 +68,25 @@ body{
 }
 .header-default nav .nav-link{
     font-weight: 600;
+    color: #333333;
+}
+.header-default nav .btn_crimson{
+    background-color: var(--crimson);
+    color: #ffffff;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.header-default nav .btn_supernova{
+    background-color: var(--supernova);
+    color: var(--mineshaft);
+    border-radius: 25px;
+    margin-left: 10px;
 }
 .header-default nav .nav-item:last-of-type{
     margin-left: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 8px 16px;
 }
 /*Main section*/
 /*Card Left*/
@@ -101,6 +100,7 @@ body{
 }
 .announce-main-description{
     background-color: var(--jacarta);
+    color: #ffffff;
     padding: 24px 32px;
 }
 .announce-main-description h1{
@@ -625,7 +625,7 @@ body{
     background-size: cover;
     background-position: top;
     padding: 50px 0;
-    height: 425px;
+    min-height: 425px;
 }
 .sales-section-title{
     text-align: center;
@@ -756,28 +756,11 @@ body{
     color: #333333;
     margin-bottom: 0.75rem;
 }
-.advantages-section-button{}
-.advantages-section-button button{
-    background-color: var(--supernova);
-    padding: 1rem 5rem;
-    color: #333333;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    border-radius: 3.75px;
-    max-width: 400px;
-    font-size: 21px;
-    margin: 3rem auto 0;
-}
-.advantages-section-two .advantages-section-button button{
+.advantages-section-two .advantages-section-button .btn_default{
     background-color: var(--jacarta);
     color: #ffffff;
 }
-.advantages-section-two .advantages-section-button button:hover{
+.advantages-section-two .advantages-section-button .btn_default:hover{
     background-color: var(--supernova);
     color: #333333;
 }
@@ -800,7 +783,7 @@ body{
     background-size: cover;
     background-position: top;
     padding: 50px 0;
-    height: 425px;
+    min-height: 425px;
 }
 .rent-section-title{
     text-align: center;
@@ -908,6 +891,172 @@ body{
     border-top: 1px solid #ffffff;
     padding-top: 10px;
 }
+/*FAQ Section*/
+.faq-section{
+    background-color: #f9f9f9;
+    background-image: url('../img/home_announce/faq_bg.png');
+    background-size: cover;
+    background-position: bottom;
+    padding: 50px 0;
+}
+.faq-section-title{
+    font-size: 44px;
+    font-weight: 900;
+    color: #666666;
+}
+.faq-section-description{
+    font-size: 24px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.faq-accordion .card{    
+    border: none;
+    background-color: transparent;
+    color: #333333;
+}
+.faq-accordion .card.active .card-header{
+    background-color: var(--supernova);
+}
+.faq-accordion .card.active .card-header button::after {
+    transform: rotate(180deg);
+}
+.faq-accordion .card-header{
+    background-color: var(--early_dawn);
+    padding: 8px 32px;
+    border: 0;
+    border-radius: 39px!important;
+    margin: 10px 5px!important;
+    -webkit-box-shadow: 0px 0px 7px -4px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 7px -4px rgba(0,0,0,0.75);
+}
+.faq-accordion .card-header:hover{
+    background-color: var(--egg_white);
+}
+.faq-accordion .card-header button{
+    font-size: 20px;
+    font-weight: 600;  
+    color: #333333;  
+    padding: 0;
+    text-decoration: none;
+    transition: .3s;
+}
+.faq-accordion .card-header button::after {
+    content: url(../img/home_announce/icons/chevron-down.png);
+    float: right;
+    background-position: center;
+    margin-top: 5px;
+    height: 24px;
+    width: 24px;
+}
+.faq-accordion .card-header button:focus {
+    box-shadow: none;
+}
+.faq-accordion .card-header button:focus-visible {
+    outline: none;
+}
+.faq-accordion .card-body{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0 1.25rem;
+    min-height: 100px;
+}
+.faq-section-contact{
+    background: #FFF;
+    box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    max-width: 400px;
+    padding: 24px;
+    flex-direction: column;
+    gap: 32px;
+    margin-left: auto;
+}
+.faq-section-contact-title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+}
+.faq-section-contact-label{
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    gap: 5px;
+}
+.faq-section-contact-input{
+    border-radius: 8px;
+    border: 1px solid #E1E3E6;
+    padding: .75rem 1rem;
+}
+.faq-section-contact-textarea{
+    border-radius: 8px;
+    border: 1px solid #E1E3E6;
+    padding: .75rem 1rem;
+    min-height: 110px;
+}
+.faq-section-contact .btn_default{
+    margin: unset;
+    margin-top: 10px;
+    width: 100%;
+}
+/*Know More Section*/
+.know-more-section{
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+.know-more-card{
+    margin-bottom: 2rem;
+    color: #333333;
+}
+.know-more-card:first-of-type .card-body{
+    min-height: 270px;
+}
+.know-more-card .card-title{
+    font-size: 24px;
+    font-weight: 700;
+    height: 60px;
+}
+.know-more-card .card-text{
+    font-size: 18px;
+    font-weight: 400;
+    height: 115px;
+}
+.know-more-card .btn_default{
+    margin-top: 0.5rem;
+}
+.know-more-card-bottom{
+    background-color: var(--jacarta);
+    border-radius: 4px;
+    padding: 24px;
+    display: flex;
+}
+.know-more-bottom-image{}
+.know-more-bottom-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.know-more-bottom-title{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.know-more-bottom-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+.know-more-card-bottom .btn_default{
+    background-color: #ffffff;
+    color: #333333;
+    max-width: 250px;
+    padding: 10px 20px;
+    margin: unset;
+}
+.know-more-card-bottom .btn_default:hover{
+    background-color: var(--supernova);
+}
+
 /*Responsive*/
 @media screen and (min-width: 1600px) {
     body{
