@@ -68,7 +68,7 @@
                             <h2>Fácil, rápido e seguro</h2>
                             <p>Confira os benefícios de<br> anunciar na Apolar</p>
                             <p>
-                                <a href="#benefits">
+                                <a href="#advtanges">
                                     <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M20.5001 3.41669C11.0803 3.41669 3.41683 11.0805 3.41683 20.5004C3.41683 29.9202 11.0803 37.584 20.5001 37.584C29.9199 37.584 37.5835 29.9202 37.5835 20.5004C37.5835 11.0805 29.9199 3.41669 20.5001 3.41669ZM20.5001 35.2454C12.3698 35.2454 5.75545 28.6308 5.75529 20.5004C5.75529 12.37 12.3697 5.75546 20.5001 5.7553C28.6304 5.75546 35.2447 12.37 35.2447 20.5006C35.2447 28.6307 28.6304 35.2454 20.5001 35.2454Z" fill="white"/>
                                         <path d="M27.9871 15.8527L20.5001 23.3965L13.0127 15.8526C12.3808 15.2158 11.356 15.2157 10.724 15.8527C10.092 16.4895 10.092 17.522 10.724 18.1588L19.3557 26.8558C19.6593 27.1616 20.0709 27.3333 20.5002 27.3333C20.9294 27.3333 21.3411 27.1615 21.6446 26.8557L30.276 18.1587C30.908 17.5218 30.908 16.4894 30.2759 15.8526C29.6439 15.2158 28.6191 15.2157 27.9871 15.8527Z" fill="white"/>
@@ -190,7 +190,7 @@
                     </div>
                 </div>
             </section>
-            <section class="calculator-section">
+            <section class="calculator-section" id="calculator">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-5 col-content">
@@ -242,7 +242,7 @@
                 </div>
             </section>
             <section class="advantages-section">
-                <div class="container">
+                <div class="container" id="advtanges">
                     <div class="row">
                         <div class="col-xl-12">
                             <h1 class="advantages-section-title">Conheça as vantagens</h1>
@@ -305,7 +305,7 @@
                             </div>
                         </div>
                         <div class="col-xl-12 advantages-section-button">
-                            <a class="btn_default" href="">
+                            <a class="btn_default" href="#calculator">
                                 Calcular meu imóvel
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.777588" y="0.5" width="24" height="24" rx="12" fill="#EFEBE7"/>
@@ -405,7 +405,7 @@
                             </div>
                         </div>
                         <div class="col-xl-12 advantages-section-button">
-                            <a class="btn_default" href="">
+                            <a class="btn_default" href="https://anuncie.apolar.com.br/" target="_blank">
                                 Quero anunciar
                                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <rect x="0.777588" y="0.5" width="24" height="24" rx="12" fill="#EFEBE7"/>
@@ -416,7 +416,7 @@
                     </div>
                 </div>
             </section>
-            <section class="faq-section">
+            <section class="faq-section" id="contactUs">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-7">
@@ -851,6 +851,44 @@
                 $(this).parent().removeClass('active');
             });
 
+        });
+    </script>
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+            && 
+            location.hostname == this.hostname
+            ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            // Does a scroll target exist?
+            if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                scrollTop: target.offset().top
+                }, 1250, function() {
+                // Callback after animation
+                // Must change focus!
+                var $target = $(target);
+                $target.focus();
+                if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                };
+                });
+            }
+            }
         });
     </script>
     <!--  -->

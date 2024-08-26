@@ -26,6 +26,9 @@
 }
   
 /*Main Css*/
+html {
+    scroll-behavior: smooth;
+  }
 body{
     padding: 0;
     font-family: "Source Sans Pro";
@@ -118,6 +121,7 @@ body{
     background-position: center;
     min-height: 650px;
     padding-top: 50px;
+    margin-bottom: -10px;
 }
 .announce-main-description{
     background-color: var(--jacarta);
