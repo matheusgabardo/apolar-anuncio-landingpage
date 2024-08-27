@@ -146,8 +146,11 @@ body{
 .announce-main-description p{
     text-align: center;
 }
-.announce-main-description a:hover svg path{
-    fill: var(--jacarta);
+.announce-main-arrow-button{
+    color: #fff;
+}
+.announce-main-arrow-button:hover {
+    color: #FFCC00 !important;
 }
 /*Card Right*/
 .compute-card-wrapper {
