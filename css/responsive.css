@@ -104,7 +104,8 @@
     }
 }
 @media (max-width: 767.98px) {
-    .header-default nav {padding: 10px 15px;}
+    .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto, .sales-section .container, .rent-section .container {padding-right: 25px;padding-left: 25px;}
+    .header-default nav {padding: 15px 25px;}
     .navbar-nav {margin-top: 1rem;border-top: 1px solid #33333359;border-bottom: 1px solid #33333359;padding-bottom: .5rem;}
     .navbar-expand-xl .navbar-nav .nav-link {padding: 8px 0px;border-bottom: 1px solid #33333317;margin: 0 20px;}
     .navbar-expand-xl .navbar-nav .nav-item:nth-child(5) .nav-link {border-bottom: unset;}
@@ -112,8 +113,8 @@
     .header-default nav .nav-item:last-of-type {margin-left: 0;}    
     .navbar-toggler-icon {background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(49,44,115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
     .navbar-toggler-icon {border-color: var(--jacarta);}
-    .announce-main-section {min-height: 460px;background-size: auto;padding: 30px 0 30px;}
-    .announce-main-description {padding: 15px;}
+    .announce-main-section {min-height: 400px;background-size: auto;padding: 0;}
+    .announce-main-description {padding: 30px 25px;min-height: 400px;display: flex;flex-direction: column;justify-content: space-between;}
     .announce-main-description h1, .steps-section-title h1, .calculator-section-content h1{font-size: 32px;margin-bottom: 2rem;}
     .sales-section-title, .advantages-section-title, .rent-section-title, .faq-section-title, .faq-section-contact-title {font-size: 34px;}
     .announce-main-description h2, .did-you-know-card-block-title h2, .sales-section-description, .rent-section-description {font-size: 24px;}
@@ -153,7 +154,10 @@
 @media (max-width: 575.98px) {
 }
 
-
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .col-xs-footer{-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}
+    .col-xs-footer{padding-right: 15px!important;padding-left: 15px!important;}
+}
 @media (min-width: 576px) and (max-width: 767.98px) {}
 @media (min-width: 768px) and (max-width: 991.98px) {}
 @media (min-width: 992px) and (max-width: 1199.98px) {}
