@@ -94,6 +94,15 @@
 
 
 @media (max-width: 575.98px) {}
+@media (max-width: 768px) {
+    .announce-main-section {
+        background-position: 80%;
+    }
+    .announce-main-description {
+        background: linear-gradient( 135deg, rgba(49, 44, 115, 0.8), rgba(49, 44, 115, 0.5));
+        border-radius: 1rem;
+    }
+}
 @media (max-width: 767.98px) {
     .header-default nav {padding: 10px 15px;}
     .navbar-nav {margin-top: 1rem;border-top: 1px solid #33333359;border-bottom: 1px solid #33333359;padding-bottom: .5rem;}
@@ -141,7 +150,8 @@
 }
 @media (max-width: 991.98px) {}
 @media (max-width: 1199.98px) {}
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+}
 
 
 @media (min-width: 576px) and (max-width: 767.98px) {}
