@@ -95,6 +95,7 @@
 
 @media (max-width: 575.98px) {}
 @media (max-width: 768px) {
+    .home-announce br{display: none;}
     .announce-main-section {background-position: 80%;}
     .announce-main-section .row {padding: 0; }
     .announce-main-section .container{max-width: 760px;}
