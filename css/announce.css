@@ -123,6 +123,9 @@ body{
     padding-top: 50px;
     margin-bottom: -10px;
 }
+.announce-main-section .row{
+    padding: 0 15px;
+}
 .announce-main-description{
     background-color: var(--jacarta);
     color: #ffffff;
