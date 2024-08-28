@@ -605,6 +605,7 @@ body{
 .steps-section .did-you-know-card-block-content p{
     font-weight: 400;
     font-size: 22px;
+    background-color: #312C73;
 }
 /*Calculator section*/
 .calculator-section{
@@ -1103,6 +1104,23 @@ body{
 .know-more-card-bottom .btn_default:hover{
     background-color: var(--supernova);
 }
+.carousel-fade .carousel-item {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+    transition: opacity 0.75s ease-in-out;
+}
+.carousel-fade .carousel-item:first-of-type {
+    position: relative;
+}
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+    transition: opacity 0.75s ease-in-out;
+}
+
 /*Responsive*/
 @media screen and (min-width: 1600px) {
     body{
